@@ -5,9 +5,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 100vh;
     background-color: black; /* Fondo negro */
     font-family: Arial, sans-serif;
+    color: white; /* Texto blanco */
 }
 
 /* Contenedor de la caja fuerte */
@@ -15,6 +17,7 @@ body {
     position: relative;
     width: 300px;
     height: 300px;
+    margin-bottom: 20px;
 }
 
 /* Estilos para la caja fuerte */
@@ -45,3 +48,37 @@ body {
 .shaking {
     animation: shake 0.5s ease-in-out;
 }
+
+/* Estilos para el cuadro de entrada del código */
+#code-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Ocultar el cuadro de entrada hasta que sea necesario */
+.hidden {
+    display: none;
+}
+
