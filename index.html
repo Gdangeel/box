@@ -14,6 +14,14 @@
         <img src="images/candado.png" alt="Candado" id="lock" onclick="shakeLock()">
     </div>
 
+    <!-- Contenedor para ingresar el código -->
+    <div id="code-input-container" class="hidden">
+        <p>Ingresa el código:</p>
+        <input type="text" id="code" placeholder="Código de letras y números">
+        <button onclick="submitCode()">Enviar</button>
+        <p id="message"></p>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
