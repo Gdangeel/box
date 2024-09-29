@@ -32,3 +32,16 @@ body {
     width: 50px;
     cursor: pointer;
 }
+
+/* Animación de sacudida para el candado */
+@keyframes shake {
+    0% { transform: translate(-50%, 0); }
+    25% { transform: translate(-45%, -5px); }
+    50% { transform: translate(-50%, 5px); }
+    75% { transform: translate(-55%, -5px); }
+    100% { transform: translate(-50%, 0); }
+}
+
+.shaking {
+    animation: shake 0.5s ease-in-out;
+}
