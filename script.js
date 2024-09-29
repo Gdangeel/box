@@ -1,15 +1,11 @@
-// Mover el candado cada vez que se presiona
-let lockPosition = 0;
-let moveRight = true;
-
-function moveLock() {
+function shakeLock() {
     const lock = document.getElementById('lock');
-
-    if (moveRight) {
-        lock.style.left = '70%'; // Mover a la derecha
-        moveRight = false;
-    } else {
-        lock.style.left = '30%'; // Mover a la izquierda
-        moveRight = true;
-    }
+    
+    // Agregar la clase 'shaking' para activar la animación
+    lock.classList.add('shaking');
+    
+    // Después de 0.5 segundos (duración de la animación), eliminar la clase
+    setTimeout(() => {
+        lock.classList.remove('shaking');
+    }, 500); // Tiempo igual a la duración de la animación
 }
