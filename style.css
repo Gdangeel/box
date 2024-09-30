@@ -91,8 +91,8 @@ button:hover {
     height: 100vh; /* Alto completo */
     background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro con opacidad */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center; /* Centramos verticalmente */
     z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
     opacity: 0; /* Comienza oculto */
     animation: fadeIn 0.5s forwards; /* Animación de aparición */
@@ -112,6 +112,7 @@ button:hover {
     max-width: 80%; /* Ajustar el ancho máximo */
     max-height: 80%; /* Ajustar la altura máxima */
     animation: zoomIn 0.5s forwards; /* Animación de zoom */
+    transform-origin: center; /* Asegurarse de que el zoom se origine desde el centro */
 }
 
 /* Animación de zoom */
