@@ -31,6 +31,7 @@ function submitCode() {
     if (code === "123ABC") {
         message.textContent = "¡Código correcto! La caja fuerte se ha abierto.";
         message.style.color = "green";
+        // Aquí puedes agregar lógica para "abrir" la caja fuerte visualmente
     } else {
         message.textContent = "Código incorrecto. Inténtalo de nuevo.";
         message.style.color = "red";
