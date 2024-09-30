@@ -3,7 +3,8 @@ let clickCount = 0; // Inicializamos el contador en 0
 function shakeLock() {
     const lock = document.getElementById('lock');
     const codeInputContainer = document.getElementById('code-input-container');
-    
+    const countDisplay = document.getElementById('count'); // Referencia al contador
+
     // Agregar la clase 'shaking' para activar la animación
     lock.classList.add('shaking');
     
@@ -14,6 +15,7 @@ function shakeLock() {
 
     // Incrementar el contador de clics
     clickCount++;
+    countDisplay.textContent = clickCount; // Actualizar el contador en la página
 
     // Si se han hecho exactamente 25 clics, mostrar el cuadro de entrada del código
     if (clickCount === 25) {
