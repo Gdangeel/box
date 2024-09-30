@@ -1,4 +1,4 @@
-let clickCount = 0;
+let clickCount = 0; // Inicializamos el contador en 0
 
 function shakeLock() {
     const lock = document.getElementById('lock');
@@ -15,7 +15,7 @@ function shakeLock() {
     // Incrementar el contador de clics
     clickCount++;
 
-    // Si se han hecho 25 clics, mostrar el cuadro de entrada del código
+    // Si se han hecho exactamente 25 clics, mostrar el cuadro de entrada del código
     if (clickCount === 25) {
         codeInputContainer.classList.remove('hidden'); // Mostrar el cuadro
     }
