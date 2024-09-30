@@ -18,7 +18,7 @@ function shakeLock() {
     countDisplay.textContent = clickCount; // Actualizar el contador en la página
 
     // Si se han hecho exactamente 25 clics, mostrar el cuadro de entrada del código
-    if (clickCount === 25) {
+    if (clickCount === 85) {
         codeInputContainer.style.display = 'block'; // Mostrar el cuadro
     }
 }
