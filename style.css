@@ -94,9 +94,32 @@ button:hover {
     justify-content: center;
     align-items: center;
     z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+    opacity: 0; /* Comienza oculto */
+    animation: fadeIn 0.5s forwards; /* Animación de aparición */
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Comienza completamente oculto */
+    }
+    to {
+        opacity: 1; /* Termina completamente visible */
+    }
 }
 
 #success-image {
-    max-width: 90%; /* Ajustar el ancho máximo */
-    max-height: 90%; /* Ajustar la altura máxima */
+    max-width: 80%; /* Ajustar el ancho máximo */
+    max-height: 80%; /* Ajustar la altura máxima */
+    animation: zoomIn 0.5s forwards; /* Animación de zoom */
+}
+
+/* Animación de zoom */
+@keyframes zoomIn {
+    from {
+        transform: scale(0); /* Comienza escalado a 0 */
+    }
+    to {
+        transform: scale(1); /* Termina en su tamaño original */
+    }
 }
