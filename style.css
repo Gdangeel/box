@@ -91,11 +91,12 @@ button:hover {
     height: 100vh; /* Alto completo */
     background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro con opacidad */
     display: flex;
-    justify-content: center; /* Centramos horizontalmente */
+    justify-content: flex-end; /* Mover el contenido hacia la derecha */
     align-items: center; /* Centramos verticalmente */
     z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
     opacity: 0; /* Comienza oculto */
     animation: fadeIn 0.5s forwards; /* Animación de aparición */
+    padding-right: 100px; /* Ajustar la distancia desde el borde derecho */
 }
 
 /* Animación de aparición */
