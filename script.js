@@ -18,7 +18,7 @@ function shakeLock() {
     countDisplay.textContent = clickCount; // Actualizar el contador en la página
 
     // Si se han hecho exactamente 25 clics, mostrar el cuadro de entrada del código
-    if (clickCount === 85) {
+    if (clickCount === 25) {
         codeInputContainer.style.display = 'block'; // Mostrar el cuadro
     }
 }
@@ -26,12 +26,15 @@ function shakeLock() {
 function submitCode() {
     const code = document.getElementById('code').value;
     const message = document.getElementById('message');
+    const successContainer = document.getElementById('success-container'); // Referencia al contenedor de éxito
     
     // Validar el código (ejemplo: el código correcto es "123ABC")
     if (code === "123ABC") {
         message.textContent = "¡Código correcto! La caja fuerte se ha abierto.";
         message.style.color = "green";
-        // Aquí puedes agregar lógica para "abrir" la caja fuerte visualmente
+        
+        // Mostrar la imagen de éxito
+        successContainer.style.display = 'block'; // Mostrar el contenedor de éxito
     } else {
         message.textContent = "Código incorrecto. Inténtalo de nuevo.";
         message.style.color = "red";
