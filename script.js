@@ -17,7 +17,7 @@ function shakeLock() {
 
     // Si se han hecho 25 clics, mostrar el cuadro de entrada del código
     if (clickCount === 25) {
-        codeInputContainer.classList.remove('hidden');
+        codeInputContainer.classList.remove('hidden'); // Mostrar el cuadro
     }
 }
 
